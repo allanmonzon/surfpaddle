@@ -1,0 +1,517 @@
+/** {
+  border: 1px solid red;
+}
+
+body {
+  margin: 0;
+}*/
+
+$primary-color: #083452; /* Dark Blue */
+$secondary-color: #106DB3; /* Lighter Blue */
+$accent-color: #A3B3BF; /* Light Gray */
+$overlay-color: rgba(20, 117, 191, .8); /* Blue */
+
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Oswald', sans-serif;
+$primary-font-weight: normal;
+
+@mixin transition($duration) {
+  -webkit-transition: all $duration ease-in ;
+}
+
+
+ul, a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+.contain {
+  margin: 0 auto;
+  width: 80%;
+}
+
+              /*============== Header ================*/
+
+.header {
+  background: url('../images/header.jpg');
+  width: 100%;
+  font-family: $primary-font;
+  text-transform: uppercase;
+}
+
+.header-color {
+  background-color: #1475BF;
+  background-color: $overlay-color;
+  height: 523px;
+  @include transition(.3s);
+
+  &:hover {
+    background: none;
+  }
+}
+
+.main-heading {
+  color: #fff;
+  text-align: center;
+  font-weight: $primary-font-weight;
+  font-size: 6.3em;
+  padding-top: 28px;
+  letter-spacing: -2px;
+  text-shadow: 0 2px 2px #18588C;
+}
+
+.main-underline {
+  font-weight: $primary-font-weight;
+  text-align: center;
+  color: $primary-color;
+  font-size: .9em;
+  margin-top: -84px;
+  margin-right: 5px;
+  word-spacing: 1px;
+}
+
+/*==== left nav ====*/
+
+.left-nav {
+  display: inline-block;
+  margin-left: -32px;
+}
+
+.left-nav-text {
+  margin: 5px 0 0 6px;
+  float: right;
+  color: $primary-color;
+}
+
+.logo-img {
+  position: relative;
+  top: -10px;
+}
+
+/*==== right nav ====*/
+
+.right-nav {
+  float: right;
+  margin-right: 31px;
+  margin-top: -4px;
+  font-family: $secondary-font;
+  font-weight: bold;
+}
+
+.right-nav-text {
+  margin-left: 10px;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  color: $primary-color;
+
+  &:hover {
+    color: #5698C4;
+  }
+}
+
+.search-img {
+  position: relative;
+  top: 5px;
+  right: 1px;
+}
+
+
+            /*============= Body ==============*/
+
+.marg-left-body {
+  margin-left: 34px;
+}
+
+.marg-right-body {
+  margin-left: 55px;
+}
+
+/*====Left Side ====*/
+
+.left-content {
+  width: 62%;
+  display: inline-block;
+  font-family: $primary-font;
+}
+
+.body-heading {
+  color: $primary-color;
+  font-family: $secondary-font;
+  font-weight: $primary-font-weight;
+  text-transform: uppercase;
+  font-size: 3.9em;
+  line-height: 70px;
+  margin-top: 63px;
+  margin-bottom: 6px;
+}
+
+.body-heading-span-1 {
+  position:relative;
+  left: -6px;
+}
+
+.body-heading-span-2 {
+  position: relative;
+  left: 3px;
+}
+
+/* Link */
+.left-img-face {
+  display: inline-block;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background: url("../images/face.jpeg");
+  background-size: 22px 22px;
+  margin-left: 4px;
+
+  .left-img-face-color {
+    background-color: #1475BF;
+    background-color:rgba(20, 117, 191, .6);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    @include transition(.2s);
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.left-name {
+  color: $secondary-color;
+  font-size: .8em;
+  position: relative;
+  top: -4px;
+  left: 3px;
+  padding-right: 5px;
+}
+
+.left-link {
+  font-size: .8em;
+  position: relative;
+  top: -3px;
+  color: $accent-color;
+}
+
+.left-link-date {
+  border-bottom: 1px solid #A3B3BF;
+  margin-left: -2px;
+}
+/* Link */
+
+/* Body Text */
+.body-text {
+  color: #5E686F;
+  margin-top: 31px;
+  margin-bottom: -5px;
+  font-size: 1em;
+  line-height: 26px;
+}
+
+.mix-tape {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.woah-line {
+  height: 57px;
+  margin-left: 6px;
+  border-left: 2px solid #D3D3D3;
+  margin-bottom: -3px;
+}
+
+.woah {
+  padding-top: 14px;
+  margin-left: 15px;
+  font-weight: $primary-font-weight;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.rollover {
+  text-decoration: underline;
+  color: $secondary-color;
+}
+/* Body Text */
+
+.body-btn {
+  height: 30px;
+  margin: 23px 4px 0 2px;
+  background:$accent-color;
+  display: inline-block;
+
+  &:hover {
+    background-color: $secondary-color;
+    @include transition(.3s);
+  }
+}
+
+.body-btn:hover > .btn-left {
+  background-color: #083452;
+  @include transition(.3s);
+}
+
+.btn-1 {
+  width: 158px;
+}
+
+.btn-2 {
+  width: 128px;
+  position: relative;
+  top: -3px;
+}
+
+.btn-3 {
+  width: 153px;
+  position: relative;
+  top: 1px;
+}
+
+.btn-left {
+  width: 33px;
+  height: 30px;
+  background: #5E686F;
+  display: inline-block;
+}
+
+.btn-left-2 {
+  position: relative;
+  top: -1px;
+}
+
+.btn-img {
+  margin: 4px 0 0 3px;
+}
+
+.btn-img-3 {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.btn-text {
+  display: inline-block;
+  font-size: .8em;
+  color: #fff;
+  font-weight: lighter;
+  word-spacing: 1px;
+  position: relative;
+  left: 7px;
+  bottom: 10px;
+}
+
+.btn-text-2 {
+  position: relative;
+  top: -6px;
+}
+
+
+/*==== Right Side ====*/
+
+.right-content {
+  width: 35%;
+  margin-top: 82px;
+  float: right;
+}
+
+/* Social */
+.right-img-face {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  background: url("../images/face.jpeg");
+  background-size: 85px 85px;
+  margin: 0 0 14px 97px;
+}
+
+.right-img-face-color {
+  background-color: #1475BF;
+  background-color:rgba(20, 117, 191, .6);
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  @include transition(.2s);
+
+  &:hover {
+    background: none;
+  }
+}
+
+.right-name {
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-left: 75px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.right-social-links {
+  color: #F9F9F9;
+  margin-top: 0;
+}
+
+.social-links {
+  color: $accent-color;
+  font-size: .8em;
+  margin: 0 5px;
+
+  &:hover {
+    color: #106DB3;
+  }
+}
+/* Social */
+
+/* Ad */
+.right-ad-img {
+  background: url("../images/ad.jpg");
+  width: 279px;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 7px;
+}
+
+.right-ad-img-color {
+  background-color: #1475BF;
+  background-color:rgba(20, 117, 191, .6);
+  height: 300px;
+  @include transition(.3s);
+
+  &:hover {
+    background: none;
+  }
+}
+
+.ad-link {
+  color: $accent-color;
+  font-size: .85em;
+  text-decoration: underline;
+  margin: 13px 0 100px 193px;
+}
+/* Ad */
+
+.right-body-heading {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  margin-top: 44px;
+  margin-bottom: -10px;
+}
+
+.right-p {
+  color: $accent-color;
+  font-family: $primary-font;
+  line-height: 24px;
+  font-size: .8em;
+  margin-right: 40px;
+}
+
+
+              /*============= Posts ===============*/
+
+
+.posts {
+  width: 100%;
+  border-top: 1px solid #E1E7EA;
+  margin-top: 65px;
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.post-header {
+  text-align: center;
+  font-size: 3.8em;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: $primary-color;
+}
+
+.post-box {
+  width: 25%;
+  height: 330px;
+  float: left;
+  position: relative;
+  color: $primary-color;
+}
+
+.post-1 {
+  background: url("../images/post1.jpg");
+}
+
+.post-2 {
+  background: url("../images/post2.jpg");
+}
+
+.post-3 {
+ background: url("../images/post3.jpg");
+}
+
+.post-4 {
+  background: url("../images/post4.jpg");
+}
+
+.post-color {
+  background-color: #1475BF;
+  background-color: $overlay-color;
+  height: 330px;
+  @include transition(.5s);
+
+  &:hover {
+   color: #fff;
+   background: none;
+  }
+}
+
+.post-text {
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin-left: 20px;
+  position: absolute;
+  bottom: -15px;
+  line-height: 40px;
+}
+
+               /*============= Footer ===============*/
+
+.footer {
+  width: 100%;
+  height: 430px;
+  background: $primary-color;
+  font-size: .82em;
+  color: $accent-color;
+}
+
+.footer-logo {
+  position: relative;
+  top: 14px;
+  left: -13px;
+}
+
+.iron-copy {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  word-spacing: 1px;
+}
+
+.footer-nav {
+  display: inline-block;
+  float: right;
+  margin: 41px 27px 0 0;
+}
+
+.footer-links {
+  color: $accent-color;
+  margin: 0 7px;
+
+  &:hover {
+    color: #fff;
+  }
+}
