@@ -217,6 +217,10 @@ li {
 .mix-tape {
   text-decoration: underline;
   color: $accent-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 .woah-line {
@@ -237,7 +241,11 @@ li {
 
 .rollover {
   text-decoration: underline;
-  color: $secondary-color;
+  color: $accent-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
 /* Body Text */
 
@@ -370,7 +378,8 @@ li {
 
 /* Ad */
 .right-ad-img {
-  background: url("../images/ad.jpg");
+  background: url("../images/ad-1.jpg");
+  background-size: cover;
   width: 279px;
   height: 300px;
   margin-top: 50px;
