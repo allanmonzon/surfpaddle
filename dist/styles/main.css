@@ -305,6 +305,7 @@ li {
 .right-ad-img-color {
   background-color: #1475bf;
   background-color: rgba(20, 117, 191, 0.6);
+  width: 279px;
   height: 300px;
   -webkit-transition: all 0.3s ease-in; }
   .right-ad-img-color:hover {
