@@ -1,4 +1,4 @@
 Surf Paddle
 ==========
 
-Surf Paddle Project
+A pixel perfect recreation of a mockup design.
